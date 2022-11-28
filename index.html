@@ -10,9 +10,33 @@
     <h1 id="title">The survey form</h1>
     <p id="description">Thank you for filling the survey form</p>
     <form id="survey-form">
-      <input id="name" type="text">
-      <input id="email" type="email">
-      <input id="number">
+      <label id="name-label" for="name">First name:</label><br>
+      <input id="name" type="text"
+      placeholder="First name"> 
+      <br><br>
+      <label id="email-label" for="emai">Email:</label><br>
+      <input id="email" type="email"
+      placeholder="email">
+      <br><br>
+      <label id="number-label" for="number">number:</label><br>
+      <input id="number" type="number" min="2001" max="2010"
+      placeholder="number">
+      <select id="dropdown">
+        <option>home phone</option>
+        <option>office phone</option>
+      </select><br><br>
+      
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> I have a boat</label><br><br>
+      </select>
+      <label id="textarea" for="name">comments</label><br>
+      <input id="textarea" type="text"
+      placeholder="comment"><br><br>
+      <button id="submit"></button> 
     </form>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
